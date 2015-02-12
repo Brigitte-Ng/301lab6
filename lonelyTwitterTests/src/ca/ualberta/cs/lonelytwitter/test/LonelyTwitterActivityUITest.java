@@ -35,8 +35,6 @@ public class LonelyTwitterActivityUITest extends
 	}
 	
 	public void testSetText(){
-		
-		
 		instrumentation.runOnMainSync(new Runnable(){
 			@Override
 			public void run(){
@@ -46,6 +44,10 @@ public class LonelyTwitterActivityUITest extends
 		});
 		instrumentation.waitForIdleSync();
 		assertEquals("correc text?", "Tweet", textInput.getText().toString());
+	}
+	
+	public void makeTweet(){
+		
 	}
 	
 	/*
